@@ -1,0 +1,15 @@
+/Users/kymochannel/Alfin/Practice/parking-system-NET-project/TestProject/obj/Debug/net8.0/TestProject.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kymochannel/Alfin/Practice/parking-system-NET-project/TestProject/obj/Debug/net8.0/TestProject.AssemblyInfoInputs.cache
+/Users/kymochannel/Alfin/Practice/parking-system-NET-project/TestProject/obj/Debug/net8.0/TestProject.AssemblyInfo.cs
+/Users/kymochannel/Alfin/Practice/parking-system-NET-project/TestProject/obj/Debug/net8.0/TestProject.csproj.CoreCompileInputs.cache
+/Users/kymochannel/Alfin/Practice/parking-system-NET-project/TestProject/obj/Debug/net8.0/TestProject.sourcelink.json
+/Users/kymochannel/Alfin/Practice/parking-system-NET-project/TestProject/bin/Debug/net8.0/TestProject
+/Users/kymochannel/Alfin/Practice/parking-system-NET-project/TestProject/bin/Debug/net8.0/TestProject.deps.json
+/Users/kymochannel/Alfin/Practice/parking-system-NET-project/TestProject/bin/Debug/net8.0/TestProject.runtimeconfig.json
+/Users/kymochannel/Alfin/Practice/parking-system-NET-project/TestProject/bin/Debug/net8.0/TestProject.dll
+/Users/kymochannel/Alfin/Practice/parking-system-NET-project/TestProject/bin/Debug/net8.0/TestProject.pdb
+/Users/kymochannel/Alfin/Practice/parking-system-NET-project/TestProject/obj/Debug/net8.0/TestProject.dll
+/Users/kymochannel/Alfin/Practice/parking-system-NET-project/TestProject/obj/Debug/net8.0/refint/TestProject.dll
+/Users/kymochannel/Alfin/Practice/parking-system-NET-project/TestProject/obj/Debug/net8.0/TestProject.pdb
+/Users/kymochannel/Alfin/Practice/parking-system-NET-project/TestProject/obj/Debug/net8.0/TestProject.genruntimeconfig.cache
+/Users/kymochannel/Alfin/Practice/parking-system-NET-project/TestProject/obj/Debug/net8.0/ref/TestProject.dll
