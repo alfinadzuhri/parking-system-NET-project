@@ -63,5 +63,63 @@ namespace ParkSystems
             }
             Console.WriteLine(count);
         }
+
+        public static void findOddLicensePlate(ParkingLot parkingLot){
+            int count = 0;
+            string result = "";
+            foreach(var data in parkingLot.Slots) {
+
+                if (data?.getVehicle?.LicensePlate != null && int.Parse(data.getVehicle.LicensePlate.Split('-')[1]) % 2 != 0) {
+                    if(count > 0){
+                        result += ", ";
+                    }
+                    result += data.getVehicle.LicensePlate;
+                    count++;
+                }
+            }
+            if (count == 0) {
+                Console.WriteLine("There's no type of vehicle with odd license plate");
+            } else {
+                Console.WriteLine(result);
+            }
+        }
+
+        public static void findEvenLicensePlate(ParkingLot parkingLot){
+            int count = 0;
+            string result = "";
+            foreach(var data in parkingLot.Slots) {
+                if (data?.getVehicle?.LicensePlate != null && int.Parse(data.getVehicle.LicensePlate.Split('-')[1]) % 2 == 0) {
+                    if(count > 0){
+                        result += ", ";
+                    }
+                    result += data.getVehicle.LicensePlate;
+                    count++;
+                }
+            }
+            if (count == 0) {
+                Console.WriteLine("There's no type of vehicle with even license plate");
+            }else{
+                Console.WriteLine(result);
+            }
+        }
+
+        public static void findLicensePlateByColour(string colour, ParkingLot parkingLot){
+            int count = 0;
+            string result = "";
+            foreach(var data in parkingLot.Slots) {
+                if (data?.getVehicle != null && data.getVehicle.Color?.Equals(colour, StringComparison.OrdinalIgnoreCase) == true) {
+                    if(count > 0){
+                        result += ", ";
+                    }
+                    result += data.getVehicle.LicensePlate;
+                    count++;
+                }
+            }
+            if (count == 0) {
+                Console.WriteLine("There's no colour of vehicle with even license plate");
+            }else{
+                Console.WriteLine(result);
+            }
+        }
     }
 }

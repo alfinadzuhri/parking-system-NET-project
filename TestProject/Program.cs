@@ -103,7 +103,7 @@ namespace ParkingSystems
 
                         case "5":
                         case "type_of_vehicles":
-                        if (commands.Length > 1)
+                            if (commands.Length > 1)
                             {
                                 ParkSystem.typeOfVehicles(commands[1], parkingLot);
                                 break;
@@ -114,8 +114,33 @@ namespace ParkingSystems
                             if (string.IsNullOrEmpty(type)) continue;
 
                             ParkSystem.typeOfVehicles(type, parkingLot);
-                        break;
+                            break;
 
+                        case "6":
+                        case "registration_numbers_for_vehicles_with_ood_plate":
+                            ParkSystem.findOddLicensePlate(parkingLot);
+                            break;
+
+                        case "7":
+                        case "registration_numbers_for_vehicles_with_event_plate":
+                            ParkSystem.findEvenLicensePlate(parkingLot);
+                            break;
+
+                        case "8":
+                        case "registration_numbers_for_vehicles_with_colour":
+                        if (commands.Length > 1)
+                            {
+                                ParkSystem.findLicensePlateByColour(commands[1], parkingLot);
+                                break;
+                            }
+                            Console.WriteLine("Enter colour of vehicles:");
+                            Console.Write(">> ");
+                            var color = Console.ReadLine();
+                            if (string.IsNullOrEmpty(color)) continue;
+
+                            ParkSystem.findLicensePlateByColour(color, parkingLot);
+                            break;
+                        
                         case "exit":
                             return;
                         default:
