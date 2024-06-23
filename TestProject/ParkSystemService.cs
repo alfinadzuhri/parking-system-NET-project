@@ -6,11 +6,8 @@ namespace ParkSystemServices
 {
     class ParkSystemService
     {
-
         public static ParkingLot createParkingLot(int capacity, ParkingLot parkingLot)
         {   
-            ParkingLot newParkingLot= new ParkingLot();
-
             if(parkingLot.Slots.Count > 0){
                 int count = parkingLot.Slots.Count;
                 for(int i=0; i < capacity; i++){
@@ -21,8 +18,7 @@ namespace ParkSystemServices
                 Console.WriteLine($"Created a parking lot with {capacity} slots");
                 return parkingLot;
             }
-
-            Console.WriteLine($"Created a parking lot with {capacity} slots");
+            Console.WriteLine($"Created a parking lot with {capacity} slots"); 
             return new ParkingLot(capacity);
         }
         public static ParkingLot getIn(Vehicle vehicle, ParkingLot parkingLot)
@@ -46,7 +42,7 @@ namespace ParkSystemServices
                 for (int i = 0; i < parkingLot.Capacity; i++){
                     if (parkingLot.Slots[i].getSlotNumber == slotNumber){
                          parkingLot.Slots[i].getVehicle = null;
-                         Console.WriteLine("test");
+                         Console.WriteLine($"Slot number {parkingLot.Slots[i].getSlotNumber} is free");
                          return parkingLot;
                     }
                 }
@@ -75,7 +71,7 @@ namespace ParkSystemServices
             if (count == 0) {
                 Console.WriteLine("There's no type of vehicle like that");
             }
-            Console.WriteLine(count);
+            Console.WriteLine($"There's {count} vehicles");
         }
 
         public static void findOddLicensePlate(ParkingLot parkingLot){
@@ -91,11 +87,7 @@ namespace ParkSystemServices
                     count++;
                 }
             }
-            if (count == 0) {
-                Console.WriteLine("There's no type of vehicle with odd license plate");
-            } else {
-                Console.WriteLine(result);
-            }
+            Console.WriteLine(result);
         }
 
         public static void findEvenLicensePlate(ParkingLot parkingLot){
@@ -110,11 +102,7 @@ namespace ParkSystemServices
                     count++;
                 }
             }
-            if (count == 0) {
-                Console.WriteLine("There's no type of vehicle with even license plate");
-            }else{
-                Console.WriteLine(result);
-            }
+            Console.WriteLine(result);
         }
 
         public static void findLicensePlateByColour(string colour, ParkingLot parkingLot){
@@ -130,7 +118,7 @@ namespace ParkSystemServices
                 }
             }
             if (count == 0) {
-                Console.WriteLine("There's no colour of vehicle with even license plate");
+                Console.WriteLine("There's no vehicles with color like that");
             }else{
                 Console.WriteLine(result);
             }
@@ -148,7 +136,7 @@ namespace ParkSystemServices
                 }
             }
             if (count == 0) {
-                Console.WriteLine("There's no slot of vehicle with color like that");
+                Console.WriteLine("There's no vehicles with color like that");
             }else{
                 Console.WriteLine(result);
             }

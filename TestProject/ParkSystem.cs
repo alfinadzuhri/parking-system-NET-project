@@ -24,12 +24,14 @@ namespace ParkSystems{
                             if (commands.Length > 1)
                             {
                                 parkingLot = ParkSystemService.createParkingLot(int.Parse(commands[1]), parkingLot);
+                                 Console.WriteLine($"Current Capacity: {parkingLot.Capacity}");
                                 break;
                             }
-                            Console.Write("\n>> Enter the number of parking slot: ");
+                            Console.Write(">> Enter number for add capcity: ");
                             var amount = Console.ReadLine();
                             if (string.IsNullOrEmpty(amount)) continue;
                             parkingLot = ParkSystemService.createParkingLot(int.Parse(amount), parkingLot);
+                            Console.WriteLine($"Current Capacity: {parkingLot.Capacity}");
                             break;
 
                         case "2":
@@ -147,13 +149,12 @@ namespace ParkSystems{
                             break;
 
                         case "exit":
+                            Console.WriteLine("Systems stopped\n");
                             return;
                         default:
                             Console.WriteLine("Wrong instruction!");
                             break;
-
                     }
-
                 }
                 catch (Exception e)
                 {
