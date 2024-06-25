@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/Users/kymochannel/.nuget/packages/": {}
+    "/home/enigma/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kymochannel/Alfin/Practice/parking-system-NET-project/TestProject/TestProject.csproj",
+      "projectUniqueName": "/home/enigma/Documents/Practice/.NET/parking-system-NET-project/TestProject/TestProject.csproj",
       "projectName": "TestProject",
-      "projectPath": "/Users/kymochannel/Alfin/Practice/parking-system-NET-project/TestProject/TestProject.csproj",
-      "packagesPath": "/Users/kymochannel/.nuget/packages/",
-      "outputPath": "/Users/kymochannel/Alfin/Practice/parking-system-NET-project/TestProject/obj/",
+      "projectPath": "/home/enigma/Documents/Practice/.NET/parking-system-NET-project/TestProject/TestProject.csproj",
+      "packagesPath": "/home/enigma/.nuget/packages/",
+      "outputPath": "/home/enigma/Documents/Practice/.NET/parking-system-NET-project/TestProject/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/kymochannel/.nuget/NuGet/NuGet.Config"
+        "/home/enigma/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -38,11 +38,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -64,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

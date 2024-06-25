@@ -24,6 +24,11 @@ namespace ParkSystemServices
         public static ParkingLot getIn(Vehicle vehicle, ParkingLot parkingLot)
         {
 
+            if(vehicle.Type?.ToLower() != "motor" && vehicle.Type?.ToLower() != "mobil"){
+                Console.WriteLine("That's vehicles cannot get in to this park area");
+                return parkingLot;
+            }
+
             for (int i = 0; i < parkingLot.Capacity; i++)
             {
                 if (parkingLot.Slots[i].getVehicle == null)
