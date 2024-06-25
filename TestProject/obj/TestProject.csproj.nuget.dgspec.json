@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/enigma/Documents/Practice/.NET/parking-system-NET-project/TestProject/TestProject.csproj": {}
+    "/Users/kymochannel/Alfin/Enigma/Recruitment Test/NTT Digital/fixed/parking-system-NET-project/TestProject/TestProject.csproj": {}
   },
   "projects": {
-    "/home/enigma/Documents/Practice/.NET/parking-system-NET-project/TestProject/TestProject.csproj": {
+    "/Users/kymochannel/Alfin/Enigma/Recruitment Test/NTT Digital/fixed/parking-system-NET-project/TestProject/TestProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/enigma/Documents/Practice/.NET/parking-system-NET-project/TestProject/TestProject.csproj",
+        "projectUniqueName": "/Users/kymochannel/Alfin/Enigma/Recruitment Test/NTT Digital/fixed/parking-system-NET-project/TestProject/TestProject.csproj",
         "projectName": "TestProject",
-        "projectPath": "/home/enigma/Documents/Practice/.NET/parking-system-NET-project/TestProject/TestProject.csproj",
-        "packagesPath": "/home/enigma/.nuget/packages/",
-        "outputPath": "/home/enigma/Documents/Practice/.NET/parking-system-NET-project/TestProject/obj/",
+        "projectPath": "/Users/kymochannel/Alfin/Enigma/Recruitment Test/NTT Digital/fixed/parking-system-NET-project/TestProject/TestProject.csproj",
+        "packagesPath": "/Users/kymochannel/.nuget/packages/",
+        "outputPath": "/Users/kymochannel/Alfin/Enigma/Recruitment Test/NTT Digital/fixed/parking-system-NET-project/TestProject/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/enigma/.nuget/NuGet/NuGet.Config"
+          "/Users/kymochannel/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -53,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
